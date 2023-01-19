@@ -28,7 +28,7 @@ const Pagination: React.FC = () => {
   const { canPageBackward, canPageForward, isFetching, page, count } = useProfileListParams()
   return (
     <nav className="flex items-center justify-between" aria-label="Pagination">
-      {count && (
+      {count > 0 && (
         <div className="hidden sm:block">
           <p className="text-sm text-gray-700">
             <span className="font-medium">{count}</span> result(s) on page {page}
