@@ -1,0 +1,50 @@
+{
+  "name": "web-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next -p 3002",
+    "format": "prettier --write --ignore-path .gitignore \"*/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint . --ext ts --ext tsx",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 120,
+    "arrowParens": "avoid",
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "4.22.0",
+    "axios": "1.2.3",
+    "immer": "9.0.18",
+    "next": "13.1.2",
+    "ramda": "0.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "4.3.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "0.4.2",
+    "@tailwindcss/typography": "0.5.9",
+    "@tailwindcss/forms": "0.5.3",
+    "@types/node": "18.11.18",
+    "@types/ramda": "0.28.21",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "autoprefixer": "10.4.13",
+    "eslint": "8.32.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-react": "7.32.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.8.3",
+    "prettier-plugin-tailwindcss": "0.2.1",
+    "tailwindcss": "3.2.4",
+    "typescript": "4.9.4"
+  }
+}
